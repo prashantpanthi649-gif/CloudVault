@@ -1,0 +1,73 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CloudVault | Cloud Storage</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="app-container">
+
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <h2 class="logo">☁ CloudVault</h2>
+
+            <nav>
+                <a href="#" class="active">My Files</a>
+                <a href="#">Recent</a>
+                <a href="#">Shared</a>
+                <a href="#">Trash</a>
+            </nav>
+
+            <div class="storage">
+                <h3>Storage</h3>
+                <p id="storage-used">Loading...</p>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+
+            <header>
+                <h1>My Files</h1>
+
+                <input
+                    type="text"
+                    id="search-input"
+                    placeholder="Search files..."
+                >
+            </header>
+
+            <!-- Upload Section -->
+            <section class="upload-section">
+                <h2>Upload your files</h2>
+
+                <input type="file" id="file-input">
+
+                <button id="upload-button">
+                    Upload File
+                </button>
+            </section>
+
+            <!-- Files Section -->
+            <section class="files-section">
+                <h2>All Files</h2>
+
+                <div id="file-list">
+                    Loading files...
+                </div>
+            </section>
+
+        </main>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
